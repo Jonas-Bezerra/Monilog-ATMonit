@@ -8,7 +8,7 @@
 body{
 	height: 100vh;
 	width: 100%;
-	background-color: #6C63FF;
+	background-color: #FF9F43;
 }
 
 .container{
@@ -55,9 +55,9 @@ body{
 
 .banner-img{
 
-	width: 100%;
+	width: 70%;
 	margin: auto;
-	padding: 25px;
+	padding: 50px;
 	position: relative;
 	
 
@@ -82,7 +82,7 @@ h2:after{
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: #6C63FF;
+    background-color: #10AC84;
 }
 
 .inpt{
@@ -108,7 +108,7 @@ textarea{
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #6C63FF;
+	background-color: #10AC84;
 	color: #fff;
 	border-radius: 5px;
 	
