@@ -40,7 +40,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #24628C;
+  background: #272838;
   height: 8vh;
   padding: 10px;
 }
@@ -262,15 +262,18 @@ nav {
 
 }
 
-#about-us{
-
-  margin-bottom: 0px;
-
+#partners{
+  padding: 5% 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media(max-width: 400px){
 
-  #about-us{
+  #partners{
 
     margin-bottom: 20%;
   
@@ -278,58 +281,55 @@ nav {
 
 }
 
-.about-us{
+.partners-boxes{
+  margin: 5% 0;
+  width: 100%;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  width: 90%;
-	height: 300px;
-  margin:auto;
-	padding: 10px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+.box{
+  display: flex;
+  flex-direction: column;
+  border:none;
+  border-radius: 3px;
+  width: 25%;
+  height: 30vh;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-
-
+	padding: 8%;
+  box-shadow: 3px 5px 8px 3px #00000048;
+  background-color: #ffff;
+  text-align: center;
+  margin: 0;
 }
 
 .box-img{
 
-  width: 90%;
-  height: 90px;
+  width: 80%;
   margin: auto;
   margin-bottom: 5%;
   
 
 }
 
+/*
 .info-img{
 
-  width: 200px;
+  width: 90%;
 
 }
-
+*/
 .info-text{
 
   font-size:1rem;
 
 }
 
-.box{
 
-  border:none;
-  border-radius: 3px;
-  width: 60%;
-  height: auto !important;
-	justify-content: center;
-	align-items: center;
-  margin:auto;
-	padding: 10px;
-  box-shadow: 3px 5px 8px 3px #00000048;
-  background-color: #ffff;
-  text-align: center;
-
-}
 
 @media(max-width: 400px){
 
@@ -341,8 +341,7 @@ nav {
     height: auto !important;
     justify-content: center;
     align-items: center;
-    margin:auto;
-    margin-top: 10%;
+    margin:10px;
     padding: 10px;
     box-shadow: 3px 5px 8px 3px #00000048;
     background-color: #ffff;
@@ -375,7 +374,7 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24628C;
+	background-color: #272838;
     padding: 70px 0;
 }
 .footer-col{
