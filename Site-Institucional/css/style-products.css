@@ -1,18 +1,18 @@
-.products{
+.products {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; 
+    width: 100%;
 }
 
-.atmonit-img{
+.atmonit-img {
     min-width: 200px;
     width: 20%;
-    padding: 5% 0;
+    padding: 3% 0;
 }
 
-.product-box{
+.product-box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,15 +22,18 @@
     width: 100%;
 }
 
-.product-box .info-text{
+.products:nth-child(2) {
+
+}
+
+.product-box .info-text {
     width: 450px;
     padding-bottom: 10%;
 }
 
-.product-box-img{
+.product-box-img {
     width: 400px;
     height: 300px;
     background-color: #E5E5E5;
-    margin-bottom: 10%;
-
-}   
+    margin-bottom: 5%;
+}

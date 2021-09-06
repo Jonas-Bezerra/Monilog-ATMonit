@@ -33,6 +33,7 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   color: var(--darker-blue-color);
+  user-select: none;
 }
 body{
   /* background-color: #f3f3f3; */

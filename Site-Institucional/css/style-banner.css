@@ -5,6 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #E5E5E5;
+    background-attachment: fixed;
     margin-bottom: 8%;
 }
 
