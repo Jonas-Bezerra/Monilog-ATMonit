@@ -143,59 +143,6 @@ nav {
   border-radius: 10px;
 }
 
-
-
-
-
-/* .header-content{
-
-  margin-top: 10%;
-  margin-bottom: 10%;
-  text-align: center;
-  color: #2C3E50;
-
-}
-
-.header-content h2{
-
-  font-size: 4vmin;
-
-}
-
-.header-content h1{
-
-  font-size: 7vmin;
-  margin-top: 16px;
-  margin-bottom: 30px;
-
-}
-
-.line{
-
-  width: 150px;
-  height: 4px;
-  background: #24628C;
-  margin: 10px auto;
-  border-radius: 5px;
-
-}
-
-.btn-home{
-
-  padding: 8px 15px;
-  background: #24628C;
-  border-radius: 50px;
-  color: whitesmoke;
-
-}
-
-.btn-home:hover{
-
-  filter: brightness(75%);
-  transition: 0.5s ease;
-
-} */
-
 /* Quem somos nós */
 
 .info-content {
@@ -223,6 +170,8 @@ nav {
   }
 }
 
+
+/* Empresas parceiras */
 #partners {
   padding: 5% 0;
   width: 100%;
@@ -254,7 +203,7 @@ nav {
   display: flex;
   flex-direction: column;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   min-width: 250px;
   width: 10%;
   height: 40vh;
@@ -271,40 +220,190 @@ nav {
   width: 80%;
 }
 
-/*
-.info-img{
 
-  width: 90%;
-
-}
-*/
 
 .info-text {
   font-size: 1rem;
 }
 
-/* 
-@media(max-width: 400px){
+/* Equipe */
 
-  .box{
+.equipe-title{
+  font-size: 30pt;
+  font-weight: bolder;
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+  text-align: center;
+}
 
-    border:none;
-    border-radius: 3px;
-    width: 60%;
-    height: auto !important;
-    justify-content: center;
-    align-items: center;
-    margin:10px;
-    padding: 10px;
-    box-shadow: 3px 5px 8px 3px #00000048;
-    background-color: #ffff;
-    text-align: center;
+.card-container{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.card{
+  max-width: 190px;
+  height: 40vh;
+  position: relative;
+  background-color: white;
+  margin: 35px 20px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  transition: 0.4s ease-in-out;
+  border-radius: 3px;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+
+.imgBx{
+  position: relative;
+  width: 260px;
+  height: auto;
   
-  }
+}
+
+.card-text{
+
+  padding-top: 10px;
+  
 
 }
 
- */
+.position{
+  padding-left: 40px;
+  height: 100px;
+}
+
+.image{
+  padding-right: 15px;
+}
+
+.imgBx img{
+  max-width: 80%;
+}
+
+.card-title{
+  text-align: center;
+  opacity: 70%;
+}
+
+.card-subtitle{
+  text-align: center;
+  opacity: 60%;
+  margin: 0;
+}
+
+/* Botões do card */
+
+.btn-position{
+
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.btn-icone{
+
+  margin-right: 5px;
+  display: inline-block;
+  width: 40px;
+  height: 40x;
+  color: #333;
+  line-height: 40px;
+  text-align: center;
+  border: 2px solid #444;
+  border-radius: 50%;
+
+}
+
+/* Git-Hub */
+
+.git{
+
+  color:#2C3E50;
+
+}
+
+.git:hover{
+
+  border-color: #fff;
+  border-color: #fff;
+  color: #fff;
+  background-color: rgba(149,0,207,1);
+  transition: 0.5s ease-in-out;
+
+}
+
+.icone-git{
+
+  text-decoration: none;
+  
+}
+
+.icone-git:hover{
+
+  color:white;
+
+}
+
+/* Linkedin */
+
+.link:hover{
+
+  border-color: #fff;
+  border-color: #fff;
+  color: #fff;
+  background-color:  #0077b5;
+  transition: 0.5s ease-in-out;
+}
+
+.icone-link{
+
+  text-decoration: none;
+
+}
+
+.icone-link:hover{
+
+  color:white;
+
+}
+
+/* Facebook */
+
+
+.face:hover{
+
+  border-color: #fff;
+  border-color: #fff;
+  color: #fff;
+  background-color:  #0077b5;
+  transition: 0.5s ease-in-out;
+}
+
+.icone-face{
+
+  text-decoration: none;
+
+}
+
+.icone-face:hover{
+
+  color:white;
+
+}
+
+
+
+
 
 /* Footer */
 
