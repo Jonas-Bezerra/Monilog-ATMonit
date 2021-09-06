@@ -139,6 +139,7 @@ nav {
   height: 2px;
   width: 60%;
   margin: auto;
+  margin-bottom: 3%;
   background-color: #24628C;
   border-radius: 10px;
 }
@@ -224,8 +225,8 @@ nav {
 }
 
 #partners {
-  padding: 5% 0;
-  width: 100%;
+  margin: auto;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,7 +247,7 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
 }
 
@@ -264,22 +265,15 @@ nav {
   box-shadow: 3px 5px 8px 3px #00000048;
   background-color: #ffff;
   text-align: center;
-  margin: 0 3% 15% 0;
+  margin: 0 3% 5% 0;
 }
 
 .box-img {
   width: 80%;
 }
 
-/*
-.info-img{
-
-  width: 90%;
-
-}
-*/
-
 .info-text {
+  text-align: justify;
   font-size: 1rem;
 }
 

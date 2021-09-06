@@ -1,0 +1,63 @@
+.team{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.team-boxes{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.team-person-box{
+    margin: 10px;
+    width: 180px; 
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team-person-box .person-img-1{
+    width: 100%;
+    height: 80%;
+    background-image: url(../img/team/abner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-person-box .person-img-2{
+    width: 100%;
+    height: 80%;
+    background-image: url(../img/team/caio.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team-person-box .person-img-3{
+    width: 100%;
+    height: 80%;
+    background-image: url(../img/team/jonas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team-person-box .person-img-4{
+    width: 100%;
+    height: 80%;
+    background-image: url(../img/team/kennedy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team-person-box .person-img-5{
+    width: 100%;
+    height: 80%;
+    background-image: url(../img/team/rafael.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
