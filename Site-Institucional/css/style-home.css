@@ -1,7 +1,7 @@
 /* GLOBAIS */
 
 :root {
-  --white: rgb(248, 248, 248);
+  --white: rgb(252, 252, 252);
   --darker-blue-color: #272838;
   --secondary-color: #164564;
   --medium-blue-color: #2980B9;
@@ -34,7 +34,9 @@
   scroll-behavior: smooth;
   color: var(--darker-blue-color);
 }
-
+body{
+  /* background-color: #f3f3f3; */
+}
 /* Nav */
 
 a {
