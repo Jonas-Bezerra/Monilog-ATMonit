@@ -176,6 +176,10 @@ nav {
 
 /* Quem somos nós */
 
+.about-us-txt{
+  text-align: justify;
+}
+
 .info-content {
   width: 90%;
   height: 300px;
