@@ -494,3 +494,9 @@ btn-home .footer-col h4::before {
     width: 100%;
   }
 }
+
+.map-bar{
+  width: 100%;
+  padding-top: 50px;
+  background-color: var(--darker-blue-color);
+}
