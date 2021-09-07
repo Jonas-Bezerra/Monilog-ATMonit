@@ -22,10 +22,6 @@
     width: 100%;
 }
 
-.products:nth-child(2) {
-
-}
-
 .product-box .info-text {
     width: 450px;
     padding-bottom: 10%;
@@ -36,4 +32,8 @@
     height: 300px;
     background-color: #E5E5E5;
     margin-bottom: 5%;
+}
+
+.reverse{
+    flex-flow: row wrap-reverse;
 }

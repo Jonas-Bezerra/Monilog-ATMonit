@@ -47,6 +47,12 @@
   background-color: #ffff;
   text-align: center;
   margin: 0 3% 10% 0;
+  transition: .5s;
+}
+
+.box:hover{
+  cursor: pointer;
+  transform: translate(-2px, -12px);
 }
 
 .box-img {
