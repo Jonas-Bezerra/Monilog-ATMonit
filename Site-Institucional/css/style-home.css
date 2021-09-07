@@ -35,19 +35,21 @@
   color: var(--darker-blue-color);
   user-select: none;
 }
-body{
+
+body {
   /* background-color: #f3f3f3; */
 }
+
 /* Nav */
 
-a {
+nav a {
   color: #fff;
   text-decoration: none;
   font-size: 25px;
   transition: 0.3s;
 }
 
-a:hover {
+nav a:hover {
   opacity: 0.7;
 }
 
@@ -154,13 +156,11 @@ nav {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.section-title{
+.section-title {
   text-align: center;
 }
 
-
 /* Sessão da home */
-
 
 .container {
   width: 85%;
@@ -180,7 +180,10 @@ nav {
 
 /* Quem somos nós */
 
-.about-us-txt{
+section{
+  padding: 5% 0;
+}
+.about-us-txt {
   text-align: justify;
 }
 
@@ -209,12 +212,9 @@ nav {
   }
 }
 
-
-
-
 /* Equipe */
 
-.equipe-title{
+.equipe-title {
   font-size: 30pt;
   font-weight: bolder;
   padding-top: 7vh;
@@ -222,7 +222,7 @@ nav {
   text-align: center;
 }
 
-.card-container{
+.card-container {
   display: flex;
   position: relative;
   justify-content: center;
@@ -231,7 +231,7 @@ nav {
   padding: 15px;
 }
 
-.card{
+.card {
   max-width: 190px;
   height: 40vh;
   position: relative;
@@ -240,49 +240,44 @@ nav {
   padding: 20px 10px;
   display: flex;
   flex-direction: row;
-  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
   transition: 0.4s ease-in-out;
   border-radius: 3px;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.1);
 }
 
-
-.imgbx{
+.imgbx {
   position: relative;
   width: 260px;
   height: auto;
-  
 }
 
-.card-text{
-
+.card-text {
   padding-top: 10px;
-  
-
 }
 
-.position{
+.position {
   padding-left: 40px;
   height: 100px;
 }
 
-.image{
+.image {
   padding-right: 15px;
 }
 
-.imgbx img{
+.imgbx img {
   max-width: 80%;
 }
 
-.card-title{
+.card-title {
   text-align: center;
   opacity: 70%;
 }
 
-.card-subtitle{
+.card-subtitle {
   text-align: center;
   opacity: 60%;
   margin: 0;
@@ -290,14 +285,12 @@ nav {
 
 /* Botões do card */
 
-.btn-position{
-
+.btn-position {
   padding-top: 20px;
   padding-left: 20px;
 }
 
-.btn-icone{
-
+.btn-icone {
   margin-right: 5px;
   display: inline-block;
   width: 40px;
@@ -307,89 +300,65 @@ nav {
   text-align: center;
   border: 2px solid #444;
   border-radius: 50%;
-
 }
 
 /* Git-Hub */
 
-.git{
-
-  color:#2C3E50;
-
+.git {
+  color: #2C3E50;
 }
 
-.git:hover{
-
+.git:hover {
   border-color: #fff;
   border-color: #fff;
   color: #fff;
-  background-color: rgba(149,0,207,1);
+  background-color: rgba(149, 0, 207, 1);
   transition: 0.5s ease-in-out;
-
 }
 
-.icone-git{
-
+.icone-git {
   text-decoration: none;
-  
 }
 
-.icone-git:hover{
-
-  color:white;
-
+.icone-git:hover {
+  color: white;
 }
 
 /* Linkedin */
 
-.link:hover{
-
+.link:hover {
   border-color: #fff;
   border-color: #fff;
   color: #fff;
-  background-color:  #0077b5;
+  background-color: #0077b5;
   transition: 0.5s ease-in-out;
 }
 
-.icone-link{
-
+.icone-link {
   text-decoration: none;
-
 }
 
-.icone-link:hover{
-
-  color:white;
-
+.icone-link:hover {
+  color: white;
 }
 
 /* Facebook */
 
-
-.face:hover{
-
+.face:hover {
   border-color: #fff;
   border-color: #fff;
   color: #fff;
-  background-color:  #0077b5;
+  background-color: #0077b5;
   transition: 0.5s ease-in-out;
 }
 
-.icone-face{
-
+.icone-face {
   text-decoration: none;
-
 }
 
-.icone-face:hover{
-
-  color:white;
-
+.icone-face:hover {
+  color: white;
 }
-
-
-
-
 
 /* Footer */
 
@@ -475,8 +444,7 @@ btn-home .footer-col h4::before {
 }
 
 .footer-col .social-links a:hover {
-  color: #24262b;
-  background-color: #ffffff;
+  background-color: var(--medium-blue-color);
 }
 
 /*responsividade do footer*/
@@ -495,7 +463,7 @@ btn-home .footer-col h4::before {
   }
 }
 
-.map-bar{
+.map-bar {
   width: 100%;
   padding-top: 50px;
   background-color: var(--darker-blue-color);

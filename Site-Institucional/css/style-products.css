@@ -17,8 +17,8 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    align-content: center;
     justify-content: space-evenly;
+    align-content: center;
     width: 100%;
 }
 
@@ -29,11 +29,23 @@
 
 .product-box-img {
     width: 400px;
-    height: 300px;
+    height: 250px;
     background-color: #E5E5E5;
     margin-bottom: 5%;
 }
 
-.reverse{
+.product-box-img:nth-child(1) {
+    background-image: url(../img/atm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-box-img:nth-child(2) {
+    background-image: url(../img/graphic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reverse {
     flex-flow: row wrap-reverse;
 }
