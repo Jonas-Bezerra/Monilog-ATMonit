@@ -1,6 +1,6 @@
 /* Empresas parceiras */
 
-#partners {
+.partners {
   background-color: var(--darker-blue-color);
   margin: auto;
   width: 100%;
@@ -12,18 +12,18 @@
 }
 
 @media(max-width: 400px) {
-  #partners {
+  .partners {
     margin-bottom: 20%;
   }
 }
 
-#partners a{
+.partners a {
   min-width: 250px;
   width: 35%;
   text-decoration: none;
 }
 
-#partners .section-title{
+.partners .section-title {
   color: var(--white);
 }
 
@@ -55,11 +55,10 @@
   transition: .5s;
 }
 
-.box:hover{
+.box:hover {
   cursor: pointer;
   transform: translate(-2px, -12px);
   box-shadow: 3px 5px 10px 3px #0000009d;
-
 }
 
 .box-img {

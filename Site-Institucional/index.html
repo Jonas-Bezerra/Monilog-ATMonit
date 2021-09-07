@@ -27,7 +27,7 @@
 <body>
   <!-- Barra de navegação -->
 
-  <nav>
+  <nav id="home_section">
     <a class="logo" href="#">
 
       <img src="img/1.svg" class="img-logo" alt="logo-monilog">
@@ -39,11 +39,11 @@
       <div class="line3"></div>
     </div>
     <ul class="nav-list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Sobre nós</a></li>
-      <li><a href="#">Equipe</a></li>
-      <li><a href="#">Parceiros</a></li>
-      <li><a href="#">Contato</a></li>
+      <li><a href="#home_section">Home</a></li>
+      <li><a href="#about_us_section">Sobre nós</a></li>
+      <li><a href="#partners_section">Parceiros</a></li>
+      <li><a href="#team_section">Equipe</a></li>
+      <li><a href="#contact_section">Contato</a></li>
     </ul>
   </nav>
 
@@ -66,7 +66,7 @@
   </div>
 
   <div class="container">
-    <section class="about-us">
+    <section id="about_us_section" class="about-us">
       <h2 class="section-title">Quem somos nós?</h2>
 
       <div class="info-content">
@@ -90,7 +90,7 @@
 
     <hr class="line">
 
-    <section class="products">
+    <section id="products_section" class="products">
       <h2 class="section-title">Nossos produtos</h2>
 
       <img class="atmonit-img" src="./img/atmonit.svg" alt="">
@@ -127,7 +127,7 @@
 
   </div>
 
-  <section id="partners">
+  <section id="partners_section" class="partners">
     <div class="container">
       <h2 class="section-title">Nosso parceiros</h2>
       <div class="partners-boxes">
@@ -163,7 +163,7 @@
   <div class="container">
     <hr class="line">
 
-    <section class="team">
+    <section id="team_section" class="team">
       <h2 class="section-title">Nossa Equipe</h2>
 
       <div class="team-boxes">
@@ -239,33 +239,35 @@
 
 
   <div class="container">
-    <form class="contact-form" action="https://api.staticforms.xyz/submit" method="post">
-      <h2 class="contact-form-title">Entre em contato</h2>
-      <!-- Replace with accesKey sent to your email -->
-      <input type="hidden" name="accessKey" value="40bacbde-248e-4137-98af-ccbdf02abbd6"> <!-- Required -->
+    <section id="contact_section">
+      <form class="contact-form" action="https://api.staticforms.xyz/submit" method="post">
+        <h2 class="contact-form-title">Entre em contato</h2>
+        <!-- Replace with accesKey sent to your email -->
+        <input type="hidden" name="accessKey" value="40bacbde-248e-4137-98af-ccbdf02abbd6"> <!-- Required -->
 
-      <div class="contact-form-field">
-        Nome
-        <input class="contact-form-input" type="text" name="name"> <!-- Optional -->
-      </div>
-      <!-- <input type="text" name="subject"> Optional -->
-      <div class="contact-form-field">
-        Email
-        <input class="contact-form-input" type="text" name="email"> <!-- Optional -->
-      </div>
-      <!-- <input type="text" name="phone"> Optional -->
-      <div class="contact-form-field">
-        Sua mensagem
-        <textarea class="contact-form-area" name="message"></textarea> <!-- Optional -->
-      </div>
-      <!-- If you want replyTo to be set to specific email -->
-      <!-- <input type="text" name="replyTo" value="myreplytoemail@example.com"> Optional -->
-      <!-- Specify @ as reply to value if you want it to be customers email -->
-      <!-- <input type="hidden" name="replyTo" value="@"> Optional -->
-      <!-- If you want form to redirect to a specific url after submission -->
-      <input type="hidden" name="redirectTo" value="https://abnerlucss.github.io/monilog/">
-      <input class="contact-form-submit-btn" type="submit" value="Enviar" />
-    </form>
+        <div class="contact-form-field">
+          Nome
+          <input class="contact-form-input" type="text" name="name"> <!-- Optional -->
+        </div>
+        <!-- <input type="text" name="subject"> Optional -->
+        <div class="contact-form-field">
+          Email
+          <input class="contact-form-input" type="text" name="email"> <!-- Optional -->
+        </div>
+        <!-- <input type="text" name="phone"> Optional -->
+        <div class="contact-form-field">
+          Mensagem
+          <textarea class="contact-form-area" name="message"></textarea> <!-- Optional -->
+        </div>
+        <!-- If you want replyTo to be set to specific email -->
+        <!-- <input type="text" name="replyTo" value="myreplytoemail@example.com"> Optional -->
+        <!-- Specify @ as reply to value if you want it to be customers email -->
+        <!-- <input type="hidden" name="replyTo" value="@"> Optional -->
+        <!-- If you want form to redirect to a specific url after submission -->
+        <input type="hidden" name="redirectTo" value="https://abnerlucss.github.io/monilog/">
+        <input class="contact-form-submit-btn" type="submit" value="Enviar" />
+      </form>
+    </section>
   </div>
 
   <div class="map-bar">
@@ -281,18 +283,17 @@
         <div class="footer-col">
           <h4>Sobre nós</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#home_section">Home</a></li>
+            <li><a href="#about_us_section">Sobre</a></li>
+            <li><a href="#team_section">Equipe</a></li>
+            <li><a href="#contact_section">Contato</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Ajuda</h4>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Formulário</a></li>
-            <li><a href="#">Email</a></li>
+            <li><a href="#contact_section">Formulário</a></li>
+            <li><a href="#contact_section">Email</a></li>
           </ul>
         </div>
 
