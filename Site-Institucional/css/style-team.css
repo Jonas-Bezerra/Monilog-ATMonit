@@ -106,3 +106,9 @@
 .team-person-box .social-icons-team a:hover i {
     color: var(--secondary-color);
 }
+
+.card-subtitle{
+
+    opacity: 80%;
+
+}

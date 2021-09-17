@@ -197,7 +197,7 @@ section{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 @media(max-width: 767px) {
@@ -212,6 +212,7 @@ section{
     text-align: center;
   }
 }
+
 
 /* Equipe */
 

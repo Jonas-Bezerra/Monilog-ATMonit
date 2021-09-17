@@ -32,6 +32,7 @@
     height: 250px;
     background-color: #E5E5E5;
     margin-bottom: 5%;
+    text-align: center;
 }
 
 .product-box-img:nth-child(1) {
