@@ -58,7 +58,7 @@ body{
 h2{
 	position: relative;
 	padding: 0 0 10px;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 	color: #272838;
 }
 
@@ -71,6 +71,7 @@ h2:after{
     height: 4px;
     width: 50px;
     border-radius: 2px;
+	margin-bottom: -8px;
     background-color: #164564;
 }
 
