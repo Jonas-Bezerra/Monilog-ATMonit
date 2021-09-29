@@ -41,6 +41,19 @@ body{
 	padding: 25px 40px;
 }
 
+.img{
+
+	width: 80%;
+
+}
+
+
+.left{
+
+	display: block;
+
+}
+
 /* Titulo do formulario */
 h2{
 	position: relative;
@@ -93,6 +106,7 @@ h2:after{
 	border: none;
 	cursor: pointer;
 	transition: .3s;
+	margin-bottom: 22px;
 }
 
 .btn:hover{
@@ -101,13 +115,51 @@ h2:after{
 }
 
 
+.link{
+
+	text-decoration: none;
+	font-weight: bold;
+	color: #272838;
+	opacity: 85%;
+
+}
+
+.link:hover{
+
+	color: #2d6992;
+
+}
+
 
 @media screen and (max-width: 880px){
 	.contact-box{
 		grid-template-columns: 1fr;
-		padding: 10px;
+		padding: 24px;
 	}
+
 	.left{
 		height: 200px;
 	}
+
+	.img{
+
+		width: 50%;
+
+	}
+}
+
+@media screen and (max-width: 500px){
+	.container{
+		padding: 20px 30px;
+	}
+
+	.left{
+		display: none;
+	}
+
+	h2{
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+
 }
