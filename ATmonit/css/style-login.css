@@ -1,0 +1,166 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+	background-color: #2d6992;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+
+
+.contact-box{
+	max-width: 1050px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+	padding: 60px;
+	border-radius: 3px;
+}
+
+/* Componente lateral da div */
+.right{
+	padding: 25px 40px;
+}
+
+.img{
+
+	width: 80%;
+
+}
+
+
+.left{
+
+	display: block;
+
+}
+
+/* Titulo do formulario */
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 25px;
+	color: #272838;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+	margin-bottom: -8px;
+    background-color: #164564;
+}
+
+/* Inputs */
+
+.inpt{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 3px;
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.inpt:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.inpt:focus{
+    border: 2px solid #164564;
+    background-color: #fff;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #164564;
+	color: #fff;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	transition: .3s;
+	margin-bottom: 22px;
+}
+
+.btn:hover{
+    background-color: #164564;
+	filter: brightness(150%);
+}
+
+
+.link{
+
+	text-decoration: none;
+	font-weight: bold;
+	color: #272838;
+	opacity: 85%;
+
+}
+
+.link:hover{
+
+	color: #2d6992;
+
+}
+
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+		padding: 24px;
+	}
+
+	.left{
+		height: 200px;
+	}
+
+	.img{
+
+		width: 50%;
+
+	}
+}
+
+@media screen and (max-width: 500px){
+	.container{
+		padding: 20px 30px;
+	}
+
+	.left{
+		display: none;
+	}
+
+	h2{
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	}
+
+}
