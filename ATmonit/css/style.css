@@ -14,6 +14,12 @@ body{
   margin-bottom: 30px;
 }
 
+.logo-img{
+
+  padding: 4px 0px 5px 0px;
+
+}
+
 .sidenav {
   height: 100%;
   width: 300px;
@@ -73,6 +79,7 @@ body{
 	background-color: #272c4a;
 	margin-left: 10px;
 	padding:10px;
+  border-top: 3px solid #10AC84;
 }
 .box p{
 	 font-size: 35px;
@@ -117,6 +124,7 @@ body{
 	width: 95%;
 	background-color: #272c4a;
 	height: 330px;
+  border-top: 3px solid #10AC84;
 	
 }
 .nav2{
