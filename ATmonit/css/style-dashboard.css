@@ -4,6 +4,7 @@ body{
 	background-color:#1b203d;
 	overflow: hidden;
 	font-family: system-ui;
+  font-family: 'Poppins', sans-serif;
 }
 .clearfix{
 	clear: both;
@@ -102,6 +103,14 @@ body{
     color: #818181;
     padding-right: 10px;
 }
+
+.expand:hover{
+
+  transform: scale(1.02);
+  filter: brightness(110%);
+
+}
+
 .col-div-8{
 	width: 103.5%;
 	float: left;
