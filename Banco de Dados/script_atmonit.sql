@@ -31,7 +31,6 @@ create table terminal(
     processador varchar(50),
     ram varchar(15),
     armazenamento varchar(15),
-    modelo_placa_mae varchar(50),
     modelo_cpu varchar(50),
     hostname varchar(50),
     fk_endereco int not null,
@@ -56,7 +55,7 @@ create table registro_componentes(
 	id_registro_componentes int primary key auto_increment,
     nome_componente varchar(50) not null, 
     porcentagem_uso double,
-    data_hora datetime,
+    data_hora datetime default current_timestamp,
     frequencia double,
     temperatura double,
     fk_terminal int,
@@ -71,6 +70,25 @@ create table registro_atividade(
     foreign key(fk_terminal) references terminal (id_terminal)
 );
 
+use atmonit;
+select * from empresa;
+
+select * from endereco_terminal;
+
+select * from funcionario;
+
+select * from terminal;
+ 
+select * from registro_componentes;
+select * from funcionario as f join empresa as e on f.fk_empresa = e.id_empresa where e.nome = 'Banco24Horas' and f.login = 'abnin' and f.senha = '123';
+
+select * from funcionario;
+select * from empresa;
+
+desc registro_componentes;
 
 
+insert into registro_componentes (nome_componente, porcentagem_uso, frequencia, fk_terminal) values (?, ?, ?, ?, ?);
+
+alter table registro_componentes modify data_hora datetime default current_timestamp;
 
