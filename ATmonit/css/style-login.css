@@ -8,7 +8,7 @@
 body{
 	height: 100vh;
 	width: 100%;
-	background-color: #2d6992;
+	background-color: #1b203dd4;
 }
 
 .container{
@@ -30,7 +30,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: #fff;
+	background-color: #272c4ace;
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 	padding: 60px;
 	border-radius: 3px;
@@ -44,6 +44,15 @@ body{
 .img{
 
 	width: 80%;
+	/* padding: 1px 0px 50px 0px */
+}
+
+.logo-sub{
+
+	font-weight: bolder;
+	color: #FFF;
+	font-weight: bolder;
+	font-size: 1em;
 
 }
 
@@ -51,7 +60,7 @@ body{
 .left{
 
 	display: block;
-
+	margin-bottom: 10%;
 }
 
 /* Titulo do formulario */
@@ -59,7 +68,7 @@ h2{
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 25px;
-	color: #272838;
+	color: #fff;
 }
 
 h2:after{
@@ -72,7 +81,7 @@ h2:after{
     width: 50px;
     border-radius: 2px;
 	margin-bottom: -8px;
-    background-color: #164564;
+    background-color: #10AC84;
 }
 
 /* Inputs */
@@ -82,7 +91,7 @@ h2:after{
 	border: 2px solid rgba(0, 0, 0, 0);
 	border-radius: 3px;
 	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
+	background-color: #fff;
 	padding: 0.5rem 1rem;
 	font-size: 1.1rem;
 	margin-bottom: 22px;
@@ -90,29 +99,32 @@ h2:after{
 }
 
 .inpt:hover{
-	background-color: rgba(0, 0, 0, 0.1);
+	transition: 0.5s ease-in-out;
+	filter: brightness(85%);
 }
 
 .inpt:focus{
-    border: 2px solid #164564;
+    border: 2px solid #10AC84;
     background-color: #fff;
 }
 
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #164564;
+	background-color: #10AC84;
 	color: #fff;
 	border-radius: 3px;
 	border: none;
 	cursor: pointer;
 	transition: .3s;
 	margin-bottom: 22px;
+	font-weight: bolder;
+	font-size: 1em;
 }
 
 .btn:hover{
-    background-color: #164564;
-	filter: brightness(150%);
+    transition: 0.5s ease-in-out;
+	filter: brightness(85%);
 }
 
 
@@ -120,14 +132,14 @@ h2:after{
 
 	text-decoration: none;
 	font-weight: bold;
-	color: #272838;
+	color: #fff;
 	opacity: 85%;
 
 }
 
 .link:hover{
 
-	color: #2d6992;
+	color: #10AC84;
 
 }
 
@@ -140,11 +152,12 @@ h2:after{
 
 	.left{
 		height: 200px;
+		margin-bottom: 0;
 	}
 
 	.img{
 
-		width: 50%;
+		width: 70%;
 
 	}
 }
@@ -156,6 +169,7 @@ h2:after{
 
 	.left{
 		display: none;
+		margin-bottom: 0;
 	}
 
 	h2{
