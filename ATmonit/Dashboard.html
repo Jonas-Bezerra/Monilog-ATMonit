@@ -8,6 +8,69 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {
+      packages: ['corechart', 'line']
+    });
+    google.charts.setOnLoadCallback(drawBasic);
+
+    function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Dogs');
+
+      data.addRows([]);
+
+      var options = {
+        hAxis: {
+          title: 'TEMPO',
+          textStyle: {
+            color: '#ffffff',
+            fontSize: 18,
+            fontName: 'Arial',
+            bold: true
+            // italic: true
+          },
+          titleTextStyle: {
+            color: '#ffffff',
+            fontSize: 18,
+            bold: true
+          },
+        },
+        vAxis: {
+          title: 'DESEMPENHO',
+          textStyle: {
+            color: '#ffffff',
+            fontSize: 18,
+            fontName: 'Arial',
+            bold: true
+            // italic: true
+          },
+          titleTextStyle: {
+            color: '#ffffff',
+            fontSize: 18,
+            bold: true
+          },
+        },
+        textStyle: {
+          color: '#ffffff',
+          fontSize: 18,
+          fontName: 'Arial',
+          bold: true
+          // italic: true
+        },
+        backgroundColor: '#272c4a',
+
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
 </head>
 
 
@@ -34,7 +97,7 @@
     </div>
 
 
-    <br/>
+    <br />
 
     <div class="col-div-3">
       <div class="box expand">
@@ -78,6 +141,7 @@
       <div class="box-8">
         <div class="content-box">
           <h2 class="card-title">Desempenho Mensal Do Caixa</h2>
+          <div id="chart_div" style="width: 100%; height: 80%"></div>
         </div>
       </div>
     </div>
