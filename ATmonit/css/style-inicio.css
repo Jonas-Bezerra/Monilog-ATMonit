@@ -48,7 +48,7 @@ body{
 
 .selected{
 
-  background-color:#1b203d;  
+  background-color:#1b203dbb;  
   color: #f1f1f1e7 !important;
 
 }
@@ -64,16 +64,39 @@ body{
 	padding:20px;
 }
 
+.box-title{
+
+  height: auto;
+  width: 80%;
+  padding: 5px;
+  background-color: #272c4a;
+  margin-top: 20px !important;
+  margin: auto;
+  border-radius: 3px;
+  text-align: center;
+  color: #f1f1f1e7;
+  font-size: 1.5em;
+
+}
+
+.head{
+	padding:20px;
+}
+
 .col-div-8{
 	width: 103.5%;
 	float: left;
 }
 
 .box-8{
-	width: 95%;
+
+  width: 78.5%;
+  margin-top: 20px !important;
+  margin-left: 9.1%;
 	background-color: #272c4a;
 	height: 500px;
-    border-top: 3px solid #10AC84;
+  border-top: 3px solid #10AC84;
+  
 }
 
 
@@ -85,12 +108,60 @@ body{
     margin: 0px;
     font-size: 20px;
     color: #10AC84;
-  }
+}
 
-.graphic{
 
-    width:95%;
-    height: 90%;
-    overflow: hidden;
-  
+.col-div-3{
+	width: 25%;
+	float: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card-atm{
+
+  width: 50%;
+  margin-left: 22%;
+
+}
+
+.status-info{
+
+  display: flex;
+  font-size:small;
+  color: #f1f1f1e7;
+}
+
+.indicator{
+
+  width: 10px;
+  height: 10px;
+  /* background-color: red; */
+  margin-top: 4px;
+  margin-right: 5px;
+  border-radius: 50%;
+  font-size: 0.5em;
+}
+
+.normal{
+
+  background-color: green;
+
+}
+
+.box{
+	width: 85%;
+	height: 100px;
+	background-color: #2b3150;
+	margin-left: 20px;
+	padding:10px;
+  cursor: pointer;
+  border-top: 3px solid #10AC84;
+}
+
+.expand:hover{
+
+  transform: scale(1.02);
+  filter: brightness(110%);
+
 }

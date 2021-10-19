@@ -11,6 +11,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ["Element", "Uso diario", { role: "style" }],
+                ["Seg", 3.94, "#10AC84"],
+                ["Ter", 8.94, "#10AC84"],
+                ["Qua", 10.49, "#10AC84"],
+                ["Qui", 19.30, "#10AC84"],
+                ["Sex", 21.45, " #10AC84"]
+            ]);
+
+            var view = new google.visualization.DataView(data);
+            view.setColumns([0, 1,
+                {
+                    calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation",
+                    
+                },
+                2]);
+
+            var options = {
+                title: "Density of Precious Metals, in g/cm^3",
+                width: 880,
+                height: 400,
+                backgroundColor: 'transparent',
+                bar: { groupWidth: "95%" },
+                color: '#ffff',
+                legend: { position: "none" },
+                hAxis: {
+                    textStyle: { color: '#FFF' },
+                }
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+            chart.draw(view, options,);
+        }
+    </script>
+
+
+
     <title>Estimativa De Filas</title>
 </head>
 
@@ -20,7 +66,7 @@
         <div class="logo">
             <img src="img/atmonit.svg" alt="" class="logo-img">
         </div>
-        <a href="#" class="icon-a"><i class="fa fa-home icons"></i> Home</a>
+        <a href="inicio.html" class="icon-a"><i class="fa fa-home icons"></i> Home</a>
         <a href="Dashboard.html" class="icon-a"><i class="fas fa-chart-line icons"></i> Dashboard</a>
         <a href="#" class="icon-a selected"><i class="fa fa-users icons"></i> Estimativa</a>
         <a href="login.html" class="icon-a"><i class="fa fa-sign-out-alt icons"></i> Logout</a>
@@ -36,16 +82,19 @@
             </div>
 
             <br>
-            
-            
+
+
             <div class="col-div-8">
                 <div class="box-8">
-                  <div class="content-box">
-                    <h2 class="card-title">Desempenho Mensal Do Caixa</h2>
-                  </div>
+                    <div class="content-box">
+                        <h2 class="card-title">Desempenho Semanal Do Caixa</h2>
+                    </div>
+
+                    <div id="columnchart_values" class="graphic"></div>
+
                 </div>
-              </div>
-            
+            </div>
+
 
         </div>
 
@@ -53,3 +102,6 @@
 </body>
 
 </html>
+
+
+<!-- Coé caio bota isso em todo texto do grafico color: '#FFF' pq o pai tá levando uma surra aqui kkkk -->
