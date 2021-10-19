@@ -157,7 +157,15 @@ body {
 @media(max-width: 1100px) {
   .col-div-3 {
     flex-direction: column;
+    margin: auto;
   }
+
+  .box-title{
+
+    width: 73%;
+
+  }
+
   .box {
     margin-bottom: 10px;
   }
@@ -165,7 +173,8 @@ body {
   .box-8{
 
     height: auto;
-    
+    width: 71%;
+    margin-left: 13%;
   }
 
 
