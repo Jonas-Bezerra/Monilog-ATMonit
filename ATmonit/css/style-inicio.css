@@ -113,15 +113,15 @@ body{
 
 .col-div-3{
 	width: 25%;
-	float: left;
+	display: flex;
   font-size: 20px;
   font-weight: 400;
 }
 
 .card-atm{
 
-  width: 50%;
-  margin-left: 22%;
+  width: 55%;
+  margin-left: 25%;
 
 }
 
@@ -149,9 +149,17 @@ body{
 
 }
 
+@media screen and(max-width: 950px){
+  .col-div-3{
+    
+    flex-direction:column !important ;
+ 
+  }
+  
+}
+
 .box{
-	width: 85%;
-	height: 100px;
+	width: 300px;
 	background-color: #2b3150;
 	margin-left: 20px;
 	padding:10px;
