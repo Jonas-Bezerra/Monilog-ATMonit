@@ -20,11 +20,13 @@
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
                 ["Element", "Uso diario", { role: "style" }],
+                ["Dom", 13.94, "#10AC84"],
                 ["Seg", 3.94, "#10AC84"],
                 ["Ter", 8.94, "#10AC84"],
                 ["Qua", 10.49, "#10AC84"],
                 ["Qui", 19.30, "#10AC84"],
-                ["Sex", 21.45, " #10AC84"]
+                ["Sex", 21.45, " #10AC84"],
+                ["Sab", 25.10, "#10AC84"]
             ]);
 
             var view = new google.visualization.DataView(data);
@@ -39,14 +41,20 @@
                 2]);
 
             var options = {
-                title: "Density of Precious Metals, in g/cm^3",
-                width: 880,
+                title: "Gráfico semanal",
+                titleTextStyle:{
+                    color: '#FFF'
+                },
+                width: 950,
                 height: 400,
                 backgroundColor: 'transparent',
                 bar: { groupWidth: "95%" },
                 color: '#ffff',
                 legend: { position: "none" },
                 hAxis: {
+                    textStyle: { color: '#FFF' },
+                },
+                vAxis: {
                     textStyle: { color: '#FFF' },
                 }
             };
@@ -68,7 +76,7 @@
         </div>
         <a href="inicio.html" class="icon-a"><i class="fa fa-home icons"></i> Home</a>
         <a href="Dashboard.html" class="icon-a"><i class="fas fa-chart-line icons"></i> Dashboard</a>
-        <a href="#" class="icon-a selected"><i class="fa fa-users icons"></i> Estimativa</a>
+        <a href="#" class="icon-a selected"><i class="fa fa-users icons"></i> Filas</a>
         <a href="login.html" class="icon-a"><i class="fa fa-sign-out-alt icons"></i> Logout</a>
 
 
