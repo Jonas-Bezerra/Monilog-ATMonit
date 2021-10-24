@@ -54,7 +54,7 @@ CREATE TABLE component_registration (
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE activity_log (
   id_activity_log INT PRIMARY KEY IDENTITY,
-  active_terminal bit default false,
+  active_terminal bit default 0,
   activity_time DATETIME2(0) NOT NULL DEFAULT GETDATE(),
   fk_terminal INT NOT NULL,
   FOREIGN KEY (fk_terminal) REFERENCES terminal(id_terminal)
