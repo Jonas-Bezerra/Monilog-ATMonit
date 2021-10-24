@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS terminal(
 
 CREATE TABLE IF NOT EXISTS component_registration (
   id_component_registration INT PRIMARY KEY AUTO_INCREMENT,
-  nome_component VARCHAR(150) NOT NULL,
+  name_component VARCHAR(150) NOT NULL,
   percentage_usage DOUBLE NOT NULL,
   date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
   frequency DOUBLE NULL,
@@ -72,7 +72,22 @@ CREATE TABLE IF NOT EXISTS usage_log (
 
 
 
+desc company;
+select * from company;
 
+insert into company values (null, "teste", "12312312312312");
 
+desc employee;
 
+insert into employee values (null, "admin", "admin", 1, "admin", "admin");
+delete from component_registration where id_component_registration < 50000; 
+delete from terminal where id_terminal = 2;
+select * from company;
+select * from terminal;
 
+delete from company where id_company = 2;
+select * from component_registration;
+update company set company_name = 'bandtec' where id_company = 1;
+select * from company;
+
+select * from component_registration order by id_component_registration desc limit 1;
