@@ -42,7 +42,7 @@ CREATE TABLE terminal(
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE component_registration (
   id_component_registration INT PRIMARY KEY IDENTITY,
-  nocomponent_registrationme_component VARCHAR(150) NOT NULL,
+  name_component VARCHAR(150) NOT NULL,
   percentage_usage FLOAT NOT NULL,
   date_time DATETIME2(0) DEFAULT GETDATE(),
   frequency FLOAT NULL,
