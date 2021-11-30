@@ -45,30 +45,7 @@ CREATE TABLE component_registration (
   name_component VARCHAR(150) NOT NULL,
   percentage_usage FLOAT NOT NULL,
   date_time DATETIME2(0) DEFAULT GETDATE(),
-  frequency FLOAT NULL,
-  temperature FLOAT NULL,
   fk_terminal INT NOT NULL,
-  FOREIGN KEY (fk_terminal) REFERENCES terminal(id_terminal)
-);
-
--- SQLINES LICENSE FOR EVALUATION USE ONLY
-CREATE TABLE activity_log (
-  id_activity_log INT PRIMARY KEY IDENTITY,
-  active_terminal bit default 0,
-  activity_time DATETIME2(0) NOT NULL DEFAULT GETDATE(),
-  fk_terminal INT NOT NULL,
-  FOREIGN KEY (fk_terminal) REFERENCES terminal(id_terminal)
-);
-
--- SQLINES LICENSE FOR EVALUATION USE ONLY
-CREATE TABLE usage_log (
-  id_usage_log INT PRIMARY KEY IDENTITY,
-  fk_terminal INT NOT NULL,
-  average_usage_time TIME(0) NULL,
-  average_disuse_time TIME(0) NULL,
-  usage_frequency FLOAT NULL,
-  percentage_usage_day FLOAT NULL,
-  percentage_usage_week FLOAT NULL,
-  percentage_usage_month FLOAT NULL,
-  FOREIGN KEY (fk_terminal) REFERENCES terminal(id_terminal)
+  FOREIGN KEY (fk_terminal) REFERENCES terminal(id_terminal),
+  place_id VARCHAR(300)
 );
