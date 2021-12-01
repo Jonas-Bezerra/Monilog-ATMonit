@@ -47,36 +47,11 @@ CREATE TABLE IF NOT EXISTS component_registration (
     name_component VARCHAR(150) NOT NULL,
     percentage_usage DOUBLE NOT NULL,
     date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
-    frequency DOUBLE NULL,
-    temperature DOUBLE NULL,
     fk_terminal INT NOT NULL,
     FOREIGN KEY (fk_terminal)
-        REFERENCES terminal (id_terminal)
+        REFERENCES terminal (id_terminal),
+	place_id VARCHAR(300)
 );
-
-CREATE TABLE IF NOT EXISTS activity_log (
-    id_activity_log INT PRIMARY KEY AUTO_INCREMENT,
-    active_terminal BOOLEAN DEFAULT FALSE,
-    activity_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    fk_terminal INT NOT NULL,
-    FOREIGN KEY (fk_terminal)
-        REFERENCES terminal (id_terminal)
-);
-
-CREATE TABLE IF NOT EXISTS usage_log (
-    id_usage_log INT PRIMARY KEY AUTO_INCREMENT,
-    fk_terminal INT NOT NULL,
-    average_usage_time TIME NULL,
-    average_disuse_time TIME NULL,
-    usage_frequency DOUBLE NULL,
-    percentage_usage_day DOUBLE NULL,
-    percentage_usage_week DOUBLE NULL,
-    percentage_usage_month DOUBLE NULL,
-    FOREIGN KEY (fk_terminal)
-        REFERENCES terminal (id_terminal)
-);
-
-
 
 desc company;
 
