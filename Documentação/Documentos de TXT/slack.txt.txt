@@ -1,0 +1,24 @@
+Slack webhook:
+https://hooks.slack.com/services/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
+
+Integração com o slack - Indicadores de alerta:
+
+Mandar mensagens sobre os três componentes: Processador, memória ram e disco
+para facilitar a demonstração. Os alertas deverão ser enviados quando os valores
+coletados pelo looca atingirem 70% da utilização de um dos componentes. A mensagem
+deve ser genérica informando um estresse acima do normal.
+Exemplo:
+
+"Máquina id: xx apresentou um estresse acima do normal que pode deixar sua operação
+suscetível a falhas! sugerimos a avaliação do componente: memória ram.
+
+Acompanhe em tempo real:
+Https://link_da_nossa/dashboard/perfeita
+"
+
+
+Enviar mensagem ao cadastrar um novo terminal:
+Exemplo:
+
+"Máquina id: xx foi adicionada com sucesso na operação. Monitoramento de recursos
+iniciado."

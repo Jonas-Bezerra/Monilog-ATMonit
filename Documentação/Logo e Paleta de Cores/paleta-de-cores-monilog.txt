@@ -1,0 +1,9 @@
+Azul escuro = #24628C
+
+Grafite = #2C3E50
+
+Verde = #27AE60
+
+Azul claro = #2980B9
+
+Marrom = #CO302B

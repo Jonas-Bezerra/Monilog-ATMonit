@@ -1,0 +1,17 @@
+https://www.facebook.com/profile.php?id=100072375710663
+https://twitter.com/MAtmonit
+https://www.instagram.com/monilog.atmonit
+
+email:
+monilog.atmonit@gmail.com
+
+senha:
+grupo091adsa
+
+Slack webhook:
+https://hooks.slack.com/services/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
+
+
+API Key Google:
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyBc84L3EnRIPeiujKBbe_6HoimwZMRbRzc
+AIzaSyBc84L3EnRIPeiujKBbe_6HoimwZMRbRzc

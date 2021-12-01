@@ -1,0 +1,51 @@
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE company(
+  id_company INT PRIMARY KEY identity,
+  company_name VARCHAR(150) NOT NULL,
+  cnpj CHAR(14) NOT NULL
+);
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE terminal_address (
+  id_terminal_address INT PRIMARY KEY IDENTITY,
+  street VARCHAR(150) NOT NULL,
+  city VARCHAR(150) NOT NULL,
+  state VARCHAR(150) NOT NULL,
+  district VARCHAR(150) NOT NULL
+);
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE terminal(
+  id_terminal INT PRIMARY KEY IDENTITY,
+  processor VARCHAR(50) NOT NULL,
+  ram_memory VARCHAR(50) NOT NULL,
+  terminal_storage VARCHAR(50) NOT NULL,
+  cpu_model VARCHAR(50) NOT NULL,
+  mac_address VARCHAR(45) NOT NULL,
+  fk_terminal_address INT NOT NULL,
+  fk_company INT NOT NULL,
+  FOREIGN KEY (fk_company) REFERENCES company (id_company),
+  FOREIGN KEY (fk_terminal_address) REFERENCES terminal_address(id_terminal_address)
+ );
+ 
+ -- SQLINES LICENSE FOR EVALUATION USE ONLY
+ CREATE TABLE employee(
+  id_employee INT PRIMARY KEY IDENTITY,
+  employee_name VARCHAR(150),
+  office VARCHAR(150) NULL,
+  fk_company INT NOT NULL,
+  login VARCHAR(150) NULL,
+  password VARCHAR(255) NULL,
+  FOREIGN KEY (fk_company) REFERENCES company(id_company)
+);
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE component_registration (
+  id_component_registration INT PRIMARY KEY IDENTITY,
+  name_component VARCHAR(150) NOT NULL,
+  percentage_usage FLOAT NOT NULL,
+  date_time DATETIME2(0) DEFAULT GETDATE(),
+  fk_terminal INT NOT NULL,
+  FOREIGN KEY (fk_terminal) REFERENCES terminal(id_terminal),
+  place_id VARCHAR(300)
+);
