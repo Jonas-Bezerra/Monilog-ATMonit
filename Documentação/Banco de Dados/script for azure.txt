@@ -26,6 +26,7 @@ CREATE TABLE terminal(
   fk_company INT NOT NULL,
   FOREIGN KEY (fk_company) REFERENCES company (id_company),
   FOREIGN KEY (fk_terminal_address) REFERENCES terminal_address(id_terminal_address)
+  place_id VARCHAR(300)
  );
  
  -- SQLINES LICENSE FOR EVALUATION USE ONLY
@@ -43,9 +44,8 @@ CREATE TABLE terminal(
 CREATE TABLE component_registration (
   id_component_registration INT PRIMARY KEY IDENTITY,
   name_component VARCHAR(150) NOT NULL,
-  percentage_usage FLOAT NOT NULL,
+  percentage_usage DECIMAL(10,2)NOT NULL,
   date_time DATETIME2(0) DEFAULT GETDATE(),
   fk_terminal INT NOT NULL,
-  FOREIGN KEY (fk_terminal) REFERENCES terminal(id_terminal),
-  place_id VARCHAR(300)
+  FOREIGN KEY (fk_terminal) REFERENCES terminal(id_terminal)
 );

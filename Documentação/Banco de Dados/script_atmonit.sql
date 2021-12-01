@@ -29,6 +29,8 @@ CREATE TABLE IF NOT EXISTS terminal (
         REFERENCES company (id_company),
     FOREIGN KEY (fk_terminal_address)
         REFERENCES terminal_address (id_terminal_address)
+      	place_id VARCHAR(300)
+
 );
  
  CREATE TABLE IF NOT EXISTS employee (
@@ -45,12 +47,11 @@ CREATE TABLE IF NOT EXISTS terminal (
 CREATE TABLE IF NOT EXISTS component_registration (
     id_component_registration INT PRIMARY KEY AUTO_INCREMENT,
     name_component VARCHAR(150) NOT NULL,
-    percentage_usage DOUBLE NOT NULL,
+    percentage_usage DECIMAL NOT NULL,
     date_time DATETIME DEFAULT CURRENT_TIMESTAMP,
     fk_terminal INT NOT NULL,
     FOREIGN KEY (fk_terminal)
-        REFERENCES terminal (id_terminal),
-	place_id VARCHAR(300)
+        REFERENCES terminal (id_terminal)
 );
 
 desc company;
